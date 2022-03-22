@@ -1,137 +1,164 @@
 
-from datetime import datetime
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.style import WD_STYLE_TYPE
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.shared import RGBColor, Inches, Pt
+from docx.oxml.xmlchemy import OxmlElement
 from docx.oxml.ns import nsdecls
 from docx.oxml import parse_xml
-from inspect import getframeinfo, stack
-from docx.oxml.xmlchemy import OxmlElement
 from docx.oxml.shared import qn
-from PyPDF2 import PdfFileMerger, PdfFileReader
-from PIL import Image
-from win32com.client import DispatchEx
-from docx2pdf import convert
+from docx.enum.table import WD_ALIGN_VERTICAL
+from matplotlib.backends.backend_pdf import PdfPages
+from datetime import datetime
+from tools import *
 
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_pdf import PdfPages
-
-
 import pandas as pd
-import docx
-import os
-import fnmatch
-import pythoncom
 import tabula
 import string
-import time
-import numpy
-import textwrap
+import docx
+import os
 
 pd.options.display.max_columns = None  # display options for table
 pd.options.display.width = None  # allows 'print table' to fill output screen
 pd.options.mode.chained_assignment = None  # disables error caused by chained dataframe iteration
 
 
-# TOOLS
-# ----------------------------------------------------------------------------------------------------------------------
-# vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-# input: "paths" is passed as a list of pdf file names
-# output: single pdf file saved to "output"
-def merge_pdfs(paths, output):
-    merged_object = PdfFileMerger()
-    for pdff in paths:
-        merged_object.append(PdfFileReader(pdff, strict=False), 'rb')
-    merged_object.write(output)
+# input: elevation photos and xrf pos photos
+# output: photo log as docx and pdf
+def create_photo_log(beholden):
+    doc = docx.Document()  # create instance of a word document
+    sections = doc.sections  # change the page margins
+    for section in sections:  # set margins equal to 0 on all sides of doc container
+        section.top_margin = Inches(0.25)
+        section.bottom_margin = Inches(0)
+        section.left_margin = Inches(0.5)
+        section.right_margin = Inches(0.5)
 
+    # create elevation and xrf photo dic
+    f_name = str(beholden[0]) + ' - ' + str(beholden[5] + ' - ' + str(beholden[6]))
 
-# input: image path
-# output: pdf with file name as "image path".pdf
-def img2pdf(fdr_nm):
-    imgpat = r'C:/Users/Elliott/pythonplay/' + fdr_nm + '.jpg'
-    pdfpat = r'C:/Users/Elliott/pythonplay/' + fdr_nm + '.pdf'
-    img1 = Image.open(imgpat)
-    img2 = img1.convert('RGB')
-    img2.save(pdfpat)
+    elev_lab_lis = []
+    for x in range(4):
+        elev_lab_lis.append('Elevation ' + string.ascii_uppercase[x])
+    arr_elev_pat = []
+    for x in range(4):
+        arr_elev_pat.append(str('job_Folders/' + f_name + '/' + str(beholden[2]) + '_LBP/elevations/' + string.ascii_lowercase[x] + '.jpg'))
 
+    xrf_lab_lis = []
+    xrf_pos_pat_lis = os.listdir('job_Folders/' + f_name + '/' + str(beholden[2]) + '_LBP/xrf_Photos')
+    for x in range(len(xrf_pos_pat_lis)):
+        xrf_lab_lis.append('Reading ' + str(xrf_pos_pat_lis[x].split('_')[1]))
+    arr_xrf_pat = []
+    for x in range(len(xrf_lab_lis)):
+        numhold = xrf_lab_lis[x].split(' ')[1]
+        arr_xrf_pat.append('job_Folders/' + f_name + '/' + str(beholden[2]) + '_LBP/xrf_Photos/' + str([num for num in xrf_pos_pat_lis if str(numhold) in str(num)][0]))
 
-# input: dictionary
-# input: query
-# output: key, value pair of matching entries in dictionary
-def search_arr(dic, quer):  # this looks wrong
-    for j in dic:
-        if str(quer) in str(quer):
-            return j, dic[j]
+    lab_full = elev_lab_lis + xrf_lab_lis
+    pat_full = arr_elev_pat + arr_xrf_pat
+    page_len = round(len(lab_full) / 6)
+    label_groups = [lab_full[i:i + 6] for i in range(0, len(lab_full), 6)]
+    pat_groups = [pat_full[i:i + 6] for i in range(0, len(pat_full), 6)]
 
+    table_arr = []
+    header_arr = []
+    brk_para_arr = []
+    brk_run_arr = []
+    # ------------------------------------------------------------------------------------------------------------------
+    for x in range(page_len):
+        # add header
+        header_arr.append(doc.add_table(1, 2))
+        header_widths = [7, 3]
+        header_arr[x].alignment = WD_TABLE_ALIGNMENT.CENTER
 
-# input: detail is the print string
-# input: theobject is the object to be printed pretty
-# output: detail, line number dispp is called, object type, object contents
-def dispp(detail, theobject='nan'):
-    print('___________________________________________________________________________________________________________')
-    caller = getframeinfo(stack()[1][0])  # get line number where dispp is called
-    print(detail,
-          '\nline no:', caller.lineno,
-          '\ntype:', ''.join([char for char in str(type(theobject)).split()[-1]][1:-2]))
+        for i in range(1, 2):  # set table cell widths
+            for cell in header_arr[x].columns[i].cells:
+                cell.width = Inches(header_widths[i])
+                cell.height = Inches(1.5)
 
-    if isinstance(theobject, dict):  # print instructions for dictionary
-        for key, value in theobject.items():
-            print(key, '\n', value, '\n')
-        print('')
-        return
-    if isinstance(theobject, str):  # print instructions for string
-        print(theobject)
-        print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-        return
-    if isinstance(theobject, int):  # print instructions for string
-        print(theobject)
-        print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-        return
-    if isinstance(theobject, list):  # print instructions for list
-        print('len: ', len(theobject))
-        for x in range(len(theobject)):
-            print(theobject[x])
-        print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-        return
-    if isinstance(theobject, pd.DataFrame):
-        with pd.option_context('display.max_rows', None, 'display.max_columns', None):
-            print(theobject)
-        print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-        return
-    if isinstance(theobject, numpy.ndarray):
-        print(theobject)
-        print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-        return
-    if isinstance((theobject, tuple)):
-        print(str(theobject))
-        print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-        return
+        # left cell
+        tab_head_left_cell = header_arr[x].cell(0, 0)
+        par_head_left = tab_head_left_cell.paragraphs[0]
+        run_head_left = par_head_left.add_run('Photo Log - ' + beholden[0])
+        font_head = run_head_left.font
+        font_head.size = Pt(14)
+        run_head_left.font.color.rgb = RGBColor(0, 91, 184)
+        par_head_left.alignment = 0
 
+        # right cell
+        tab_head_right_cell = header_arr[x].cell(0, 1)
+        par_head_right = tab_head_right_cell.paragraphs[0]
+        run_head_right = par_head_right.add_run()
+        run_head_right.add_picture('lead_Pit/reporting/photo_Log/ei.jpg', width=Inches(2))
+        par_head_right.alignment = 2
+        par_head_right.add_run()
 
-# input: list of values
-# output: list of unique values
-def unq_lis(listt):
-    lis1 = []
-    lis2 = ''
-    for i in listt:
-        if i not in lis1:
-            lis1.append(i)
-    for j in lis1:
-        lis2 += str(j) + ', '
-    return str(lis2[0:-2])
-# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-# ----------------------------------------------------------------------------------------------------------------------
+        # t_head formatting
+        header_arr[x].cell(0, 0).vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+        # ------------------------------------------------------------------------------------------------------------------
+
+        lg = label_groups[x]
+        pg = pat_groups[x]
+        table_arr.append(doc.add_table(len(lg), 2))
+        table_arr[x].alignment = WD_TABLE_ALIGNMENT.CENTER
+        table_arr[x].style = 'Table Grid'
+        cell_arr = []
+        par_arr = []
+        run_arr = []
+        for i in range(len(pg))[::2]:
+            for j in range(2):
+                ipj = i + j
+                cell_arr.append(table_arr[x].cell(i, j))
+                cell_arr[ipj].width = Inches(3.5)
+                par_arr.append(cell_arr[ipj].paragraphs[0])
+                # par_arr[ipj].alignment = WD_ALIGN_PARAGRAPH.DISTRIBUTE
+                run_arr.append(par_arr[ipj].add_run())
+                run_arr[ipj].add_picture(pg[ipj], height=Inches(2.75))
+                last_p = doc.tables[-1].rows[-1].cells[-1].paragraphs[-1]
+                last_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+        cell_label_arr = []
+        par_label_arr = []
+        run_label_arr = []
+        font_label_arr = []
+        for i in range(len(pg))[1::2]:
+            for j in range(2):
+                comb = i + j -1
+                cell_label_arr.append(table_arr[x].cell(i, j))
+                par_label_arr.append(cell_label_arr[comb].paragraphs[0])
+                par_label_arr[comb].alignment = 1
+                run_label_arr.append(par_label_arr[comb].add_run(lg[comb]))
+                font_label_arr.append(run_label_arr[comb].font)
+                font_label_arr[comb].size = Pt(14)
+
+        skipper = 0
+        for row in table_arr[x].rows:
+            if skipper == 1:
+                row.height = Pt(20)
+                skipper = 0
+            else:
+                skipper = 1
+        if page_len > 1 and x != (page_len-1):
+            brk_para_arr.append(doc.add_paragraph())
+            brk_run_arr.append(brk_para_arr[x].add_run(''))
+
+    # ------------------------------------------------------------------------------------------------------------------
+    # SAVE DOCUMENT AS
+
+    fl_pat = r'C:\Users\Elliott\pythonplay\lead_Pit\LRA\finished_Docs'
+    doc.save(str(fl_pat + '\\' + beholden[0] + '\\' + beholden[0] + '_photo_Log.docx'))
+    # ------------------------------------------------------------------------------------------------------------------
 
 
 # input: dfs is list of xrf pos tables
 # input: findings is the blank table established in doc
 # input: index is the table index in dfs
-# output: populated and foramtted table in doc
+# output: populated and formatted table in doc
 def pop_table(dfs, findings, index):
-    dfs[index].loc[-1] = dfs[index].columns
-    dfs[index].index = dfs[index].index + 1
-    dfs[index].sort_index(inplace=True)
+    dfs[index].loc[-1] = dfs[index].columns  # adds column row as index -1
+    dfs[index].index = dfs[index].index + 1  # adds 1 to all indices, setting column header to index 0
+    dfs[index].sort_index(inplace=True)  # sorts header to top of dataframe
+
     nonelis = []
     for x in range(dfs[index].shape[1]):
         nonelis.append(None)
@@ -144,9 +171,9 @@ def pop_table(dfs, findings, index):
     if index == 3 or index == 4:
         dfs[index].loc[-1] = nonelis  # placeholder gets replaced later
         t1_widths = [.5, 1.25, 1.5, 1.75, 1]
+
     dfs[index].index = dfs[index].index + 1
     dfs[index].sort_index(inplace=True)
-
     findings.alignment = WD_TABLE_ALIGNMENT.CENTER  # align table center
 
     for i in range(1, dfs[index].shape[1]):  # set column widths using t1_widths

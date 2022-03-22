@@ -1,12 +1,15 @@
-from func_repo import *
-import os
-import subprocess
-import pandas as pd
-import traceback
+
 from docx2pdf import convert
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from PIL import Image
+from func_repo import *
+from tools import *
+
+import pandas as pd
+import subprocess
+import traceback
 import fitz
+import os
 
 pd.options.display.max_columns = None  # display options for table
 pd.options.display.width = None  # allows 'print table' to fill output screen
@@ -41,6 +44,7 @@ table_names = ['Table 1: Lead-Based Paint¹',
                'Table 5: Soil Sample Analysis',
                'Table 6: Lead Hazard Control Options¹']
 proj_num = '210289.00'
+subprocess.call(["taskkill", "/f", "/im", "WINWORD.EXE"])  # kill word
 
 # ----------------------------------------------------------------------------------------------------------------------
 # input: schedule as excel file
@@ -98,7 +102,11 @@ for index, row in df.iterrows():
 
     xrf_clean_excel2pdf(gx, thero)  # save clean excel file as pdf, use beholden to get .xlsx path name
 
-    subprocess.call(["taskkill", "/f", "/im", "WINWORD.EXE"])  # kill excel at end
+    subprocess.call(["taskkill", "/f", "/im", "WINWORD.EXE"])  # kill word
+
+    create_photo_log(thero)
+    pat_photo_log = 'lead_Pit/LRA/finished_Docs/' + thero[0] + '\\' + thero[0] + '_photo_Log.docx'
+    convert(pat_photo_log)
 
     create_lra(xtab,  # dflis
                thero,  # beholden
@@ -155,14 +163,14 @@ for index, row in df.iterrows():
     merge_lis = ['lead_Pit/LRA/finished_Docs/' + row.to_numpy()[0] + '/' + row.to_numpy()[0] + '_LRA.pdf',
                  'lead_Pit/reporting/LRA/attachments.pdf',
                  'lead_Pit/reporting/LRA/floor_Plan.pdf',
-                 floor_path + '.pdf',  # place holder for actual floor plan
+                 floor_path + '.pdf',
                  'lead_Pit/reporting/LRA/risk_Assessment.pdf',
                  wavepath[0] + '.pdf',
                  wavepath[1] + '.pdf',
                  wavepath[2] + '.pdf',
                  'lead_Pit/reporting/LRA/xrf_Photos.pdf',
                  'lead_Pit/LRA/finished_Docs/' + thero[0] + '/xrf_clean.pdf',
-                 'lead_Pit/reporting/LRA/xrf_Photos.pdf',  # place holder for xrf positive photo log
+                 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/' + thero[0] + '_photo_Log.pdf',
 
                  'lead_Pit/reporting/LRA/lab_Results.pdf',
                  'lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_main.pdf',
