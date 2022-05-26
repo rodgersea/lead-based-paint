@@ -1,0 +1,12 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,A223370,A223370.01,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Textured Ceiling,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,White,Heterogeneous,,100,,Zane Heinz,
+001B,,A223370,A223370.02,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Textured Ceiling,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,White,Heterogeneous,,100,,Zane Heinz,
+001C,,A223370,A223370.03,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Textured Ceiling,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,White,Heterogeneous,,100,,Zane Heinz,
+002A,,A223370,A223370.04,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Wallboard/Joint Compound,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,White,Heterogeneous,20,81,,Zane Heinz,
+002B,,A223370,A223370.05,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Wallboard/Joint Compound,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,White,Heterogeneous,20,81,,Zane Heinz,
+003A,,A223370,A223370.06,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Sheet Vinyl,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,Beige,Heterogeneous,30,70,,Zane Heinz,
+003B,,A223370,A223370.07,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Sheet Vinyl,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,Beige,Heterogeneous,30,70,,Zane Heinz,
+004A,,A223370,A223370.08,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Sheet Vinyl,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,Beige,Heterogeneous,30,70,,Zane Heinz,
+004B,,A223370,A223370.09,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Sheet Vinyl,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,Beige,Heterogeneous,30,70,,Zane Heinz,
+005A,,A223370,A223370.10,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Shingle,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,Black,Heterogeneous,50,50,,Zane Heinz,
+005B,,A223370,A223370.11,Eurofins CEI,PLM Bulk,,5/9/2022,5/11/2022,Shingle,,,ND,,,,,,,%,crushed/milled/sifted/washed with 10% HCI,Black,Heterogeneous,50,50,,Zane Heinz,

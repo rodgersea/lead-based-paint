@@ -17,7 +17,8 @@ pd.options.mode.chained_assignment = None  # disables error caused by chained da
 
 # ----------------------------------------------------------------------------------------------------------------------
 # global variables
-insp_num = {'Chris Ciappina': '120303',
+insp_num = {'Elliott Rodgers': '110341',
+            'Chris Ciappina': '120303',
             'Fabrizzio Simoni': '120304',
             'Parker Alvis': '120301',
             'Larry Rockefeller': '120291',
@@ -27,7 +28,8 @@ insp_num = {'Chris Ciappina': '120303',
             'Tom Majkowski': '120166',
             'Brian Long': 'unknown',
             'Kevin': 'unknown'}  # inspector numbers
-name2sig = {'Chris Ciappina': 'chris_ciappina',
+name2sig = {'Elliott Rodgers': 'elliott_rodgers',
+            'Chris Ciappina': 'chris_ciappina',
             'Fabrizzio Simoni': 'fabrizzio_simoni',
             'Parker Alvis': 'parker_alvis',
             'Larry Rockefeller': 'larry_rockefeller',
@@ -43,17 +45,18 @@ table_names = ['Table 1: Lead-Based Paint¹',
                'Table 4: Dust Wipe Sample Analysis',
                'Table 5: Soil Sample Analysis',
                'Table 6: Lead Hazard Control Options¹']
-proj_num = '210289.00'
+proj_num = '220083.00'
 subprocess.call(["taskkill", "/f", "/im", "WINWORD.EXE"])  # kill word
+cwd = os.path.abspath(os.path.dirname(__file__))
 
 # ----------------------------------------------------------------------------------------------------------------------
 # input: schedule as excel file
 # output: variable df as dataframe containing pertinent information to the list of app numbers
 # ----------------------------------------------------------------------------------------------------------------------
-sched_lis = os.listdir('schedule_compile')
-sched_hold = parse_excel('schedule_compile/' + str(sched_lis[0]))
+sched_lis = os.listdir(os.path.join(cwd, 'schedule_compile'))
+sched_hold = parse_excel(os.path.join(cwd, 'schedule_compile', str(sched_lis[0])))
 
-arr = os.listdir('job_Folders')  # create array of file names
+arr = os.listdir(os.path.join(cwd, 'job_Folders'))  # create array of file names
 # create dataframe of rows pertaining to app numbers in "arr"
 # create array of app numbers
 arr1 = []
@@ -80,112 +83,131 @@ subprocess.call(["taskkill", "/f", "/im", "EXCEL.EXE"])  # kill excel at start
 # call create_lra function on df1 to create LRA's for all apps in dataframe
 for index, row in df.iterrows():
     thero = row.to_numpy()
-    dispp('beholden', thero)
+    full_app = thero[0] + ' - ' + thero[5] + ' - ' + thero[6]
+    lead_str = thero[2] + '_LBP'
+    app_data_pat = os.path.join(cwd, 'job_Folders', full_app, lead_str, 'app_Data')
+    app_report_pat = os.path.join(cwd, 'finished_Docs', thero[0])
 
-    app_lis = os.listdir('job_Folders/' + str(thero[0]) + ' - ' + str(thero[5]) + ' - ' + str(thero[6]) + '/' + str(thero[2]) + '_LBP')
-    pdf_filename = os.listdir('job_Folders/' + str(thero[0]) + ' - ' + str(thero[5]) + ' - ' + str(thero[6]) + '/' + str(thero[2]) + '_LBP/lab_Results/')
-    pdf_path1 = 'job_Folders/' + str(thero[0]) + ' - ' + str(thero[5]) + ' - ' + str(thero[6]) + '/' + str(thero[2]) + '_LBP/lab_Results/' + pdf_filename[0]
-    gx = get_xrf(row.to_numpy())  # gx = raw xrf data
-    xtab = xrf_tables(gx, pdf_path1)  # xtab =
-    try:
-        pathh = 'lead_Pit/LRA/finished_Docs/' + str(thero[0]) + '/' + str(thero[0]) + '_LRA.docx'
-    except:
-        traceback.print_exc()
+    fin_check_path = os.path.join(cwd, 'finished_Docs', str(thero[0]), thero[0] + '_LBP_Report_' + thero[11].strftime('%m%d%y') + '.pdf')
+    if not os.path.exists(fin_check_path):
+        dispp('beholden', thero)
 
-    # save xrf_clean.xlsx in app folder
-    save_xrf_clean_xlsx(gx,
-                        thero)
+        pdf_path1 = os.path.join(app_data_pat, 'lab_Results', os.listdir(os.path.join(app_data_pat, 'lab_Results'))[0])
+        gx = get_xrf(row.to_numpy())  # gx = raw xrf data
 
-    # create table 1: Lead Based Paint, save as table1_lbp.xlsx
-    save_xrf_pos_xlsx(xtab,
-                      thero)
+        pb_res = pdf_scrape(pdf_path1)
+        xtab = xrf_tables(gx, pb_res)
+        xtab1 = xrf_tables(gx, pb_res)
+        xtab2 = xrf_tables(gx, pb_res)
+        try:
+            pathh = os.path.join(app_report_pat, str(thero[0]) + '_LRA.docx')
+        except:
+            traceback.print_exc()
 
-    xrf_clean_excel2pdf(gx, thero)  # save clean excel file as pdf, use beholden to get .xlsx path name
+        # save xrf_clean.xlsx in app folder
+        save_xrf_clean_xlsx(gx,
+                            thero)
 
-    subprocess.call(["taskkill", "/f", "/im", "WINWORD.EXE"])  # kill word
+        # create table 1: Lead Based Paint, save as table1_lbp.xlsx
+        save_xrf_pos_xlsx(xtab,
+                          thero)
 
-    create_photo_log(thero)
-    pat_photo_log = 'lead_Pit/LRA/finished_Docs/' + thero[0] + '\\' + thero[0] + '_photo_Log.docx'
-    convert(pat_photo_log)
+        xrf_clean_excel2pdf(gx, thero)  # save clean excel file as pdf, use beholden to get .xlsx path name
 
-    create_lra(xtab,  # dflis
-               thero,  # beholden
-               insp_num,  # from global variables
-               proj_num)  # from global variables
+        subprocess.call(["taskkill", "/f", "/im", "WINWORD.EXE"])  # kill word
 
-    path_lra = 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/' + thero[0] + '_LRA.docx'
-    convert(path_lra)
+        create_photo_log(thero, cwd)
 
-    create_lbpas(xtab,  # dflis
-                 thero,  # beholden
-                 insp_num,  # from global variables
-                 name2sig)  # from global variables
+        create_lra(xtab1,  # dflis
+                   thero,  # beholden
+                   insp_num,  # from global variables
+                   proj_num)  # from global variables
 
-    path_lbpas = 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/' + thero[0] + '_LBPAS.docx'
-    convert(path_lbpas)
+        path_lra = os.path.join(app_report_pat, thero[0] + '_LRA.docx')
 
-    wavelis = ['form_5.0_Page_1',
-               'form_5.0_Page_2',
-               'form_5.1']
-    wavepath = []
-    for x in range(len(wavelis)):
-        wavepath.append('job_Folders/' + thero[0] + ' - ' + thero[5] + ' - ' + thero[6] + '/' + thero[2] + '_LBP/' + wavelis[x] + '/' + os.listdir('job_Folders/' + thero[0] + ' - ' + thero[5] + ' - ' + thero[6] + '/' + thero[2] + '_LBP/' + wavelis[x])[0])
-    for x in range(len(wavepath)):
-        wavepath[x] = wavepath[x][:-4]
+        lra_pdf_ex = os.path.join(app_report_pat, thero[0] + '_LRA.pdf')
+        if not os.path.exists(lra_pdf_ex):
+            convert(path_lra)
 
-    for x in wavepath:
-        img2pdf(x)
+        create_lbpas(xtab2,  # dflis
+                     thero,  # beholden
+                     insp_num,  # from global variables
+                     name2sig)  # from global variables
 
-    floor_path = ('job_Folders/' + thero[0] + ' - ' + thero[5] + ' - ' + thero[6] + '/' + thero[2] + '_LBP/floorplan/' + os.listdir('job_Folders/' + thero[0] + ' - ' + thero[5] + ' - ' + thero[6] + '/' + thero[2] + '_LBP/floorplan')[0])[:-4]
-    img2pdf(floor_path)
+        path_lbpas = os.path.join(app_report_pat, thero[0] + '_LBPAS.docx')
 
-    input1 = fitz.open(pdf_path1)
-    page_end = input1.loadPage(3)
-    pix = page_end.get_pixmap()
-    outputt = 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_end.png'
-    pix.save(outputt)
+        lbpas_pdf_ex = os.path.join(app_report_pat, thero[0] + '_LBPAS.pdf')
+        if not os.path.exists(lbpas_pdf_ex):
+            convert(path_lbpas)
 
-    imgpat = r'C:/Users/Elliott/pythonplay/lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_end.png'
-    pdfpat = r'C:/Users/Elliott/pythonplay/lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_end.pdf'
-    img1 = Image.open(imgpat)
-    img2 = img1.convert('RGB')
-    img2.save(pdfpat)
+        wavelis = ['form_5.0_Page_1',
+                   'form_5.0_Page_2',
+                   'form_5.1']
+        wavepath = []
+        for x in range(len(wavelis)):
+            wavey = os.listdir(os.path.join(app_data_pat, wavelis[x]))
+            for y in wavey:
+                if y[-4:] != '.pdf':
+                    img2pdf(y)
+                    wavepath.append(os.path.join(app_data_pat, wavelis[x], y[:-4] + '.pdf'))
+                    break
+                else:
+                    wavepath.append(os.path.join(app_data_pat, wavelis[x], y))
 
-    resmain_reader = PdfFileReader(pdf_path1)
-    resmain_writer = PdfFileWriter()
-    for x in range(3):
-        my_page = resmain_reader.getPage(x)
-        resmain_writer.addPage(my_page)
-    resmain_output = 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_main.pdf'
-    with open(resmain_output, 'wb') as output:
-        resmain_writer.write(output)
+        for x in os.listdir(os.path.join(app_data_pat, 'floorplan')):
+            if x[-4:] != '.pdf':
+                img2pdf(x)
+                floor_path = os.path.join(app_data_pat, 'floorplan', x[:-4] + '.pdf')
+                break
+            else:
+                floor_path = os.path.join(app_data_pat, 'floorplan', x)
 
-    merge_lis = ['lead_Pit/LRA/finished_Docs/' + row.to_numpy()[0] + '/' + row.to_numpy()[0] + '_LRA.pdf',
-                 'lead_Pit/reporting/LRA/attachments.pdf',
-                 'lead_Pit/reporting/LRA/floor_Plan.pdf',
-                 floor_path + '.pdf',
-                 'lead_Pit/reporting/LRA/risk_Assessment.pdf',
-                 wavepath[0] + '.pdf',
-                 wavepath[1] + '.pdf',
-                 wavepath[2] + '.pdf',
-                 'lead_Pit/reporting/LRA/xrf_Photos.pdf',
-                 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/xrf_clean.pdf',
-                 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/' + thero[0] + '_photo_Log.pdf',
+        input1 = fitz.open(pdf_path1)
+        page_end = input1.loadPage(3)
+        pix = page_end.get_pixmap()
+        outputt = os.path.join(cwd, 'finished_Docs', thero[0], 'res_end.png')
+        pix.save(outputt)
 
-                 'lead_Pit/reporting/LRA/lab_Results.pdf',
-                 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_main.pdf',
-                 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/res_end.pdf',
-                 'lead_Pit/reporting/LRA/method_all.pdf',
-                 'lead_Pit/reporting/LRA/lbpas.pdf',
+        imgpat = os.path.join(cwd, 'finished_Docs', thero[0], 'res_end.png')
+        pdfpat = os.path.join(cwd, 'finished_Docs', thero[0], 'res_end.pdf')
 
-                 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/' + thero[0] + '_LBPAS.pdf',
-                 'lead_Pit/reporting/LRA/xrf_all.pdf',
-                 'lead_Pit/reporting/LRA/certs.pdf',
-                 'lead_Pit/reporting/Licensure/Lead/' + thero[1] + '.pdf',
-                 'lead_Pit/reporting/LRA/firm_license.pdf',
+        img1 = Image.open(imgpat)
+        img2 = img1.convert('RGB')
+        img2.save(pdfpat)
 
-                 'lead_Pit/reporting/LRA/rebuild.pdf']
+        resmain_reader = PdfFileReader(pdf_path1)
+        resmain_writer = PdfFileWriter()
+        for x in range(3):
+            my_page = resmain_reader.getPage(x)
+            resmain_writer.addPage(my_page)
+        resmain_output = 'finished_Docs/' + thero[0] + '/res_main.pdf'
+        with open(resmain_output, 'wb') as output:
+            resmain_writer.write(output)
 
-    merge_pdfs(merge_lis, 'lead_Pit/LRA/finished_Docs/' + thero[0] + '/' + thero[0] + '_LBP_Report.pdf')
+        merge_lis = [os.path.join('finished_Docs', row.to_numpy()[0], row.to_numpy()[0] + '_LRA.pdf'),
+                     'reporting_Docs/LRA/attachments.pdf',
+                     'reporting_Docs/LRA/floor_Plan.pdf',
+                     floor_path,
+                     'reporting_Docs/LRA/risk_Assessment.pdf',
+                     wavepath[0],
+                     wavepath[1],
+                     wavepath[2],
+                     'reporting_Docs/LRA/xrf_Photos.pdf',
+                     os.path.join('finished_Docs', thero[0], 'xrf_clean.pdf'),
+                     os.path.join('finished_Docs', thero[0], thero[0] + '_photo_Log.pdf'),
 
-    subprocess.call(["taskkill", "/f", "/im", "EXCEL.EXE"])  # kill excel at end
+                     'reporting_Docs/LRA/lab_Results.pdf',
+                     os.path.join('finished_Docs', thero[0], 'res_main.pdf'),
+                     os.path.join('finished_Docs', thero[0], 'res_end.pdf'),
+                     'reporting_Docs/LRA/method_all.pdf',
+                     'reporting_Docs/LRA/lbpas.pdf',
+
+                     os.path.join('finished_Docs', thero[0], thero[0] + '_LBPAS.pdf'),
+                     'reporting_Docs/LRA/xrf_all.pdf',
+                     'reporting_Docs/LRA/certs.pdf',
+                     os.path.join('reporting_Docs/Licensure/Lead', thero[1] + '.pdf'),
+                     'reporting_Docs/LRA/firm_license.pdf']
+
+        merge_pdfs(merge_lis, os.path.join(app_report_pat, thero[0] + '_LBP_Report_' + thero[11].strftime('%m%d%y') + '.pdf'))
+
+        subprocess.call(["taskkill", "/f", "/im", "EXCEL.EXE"])  # kill excel at end

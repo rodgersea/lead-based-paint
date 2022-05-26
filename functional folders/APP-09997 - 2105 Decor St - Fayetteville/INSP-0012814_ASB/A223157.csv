@@ -1,0 +1,9 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,A223157,A223157.01,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Roofing Composite Shingle,,,ND,,,,,,,%,heated/ashed/dissolved with solvent,Gray,Heterogeneous,30,70,,Ryan Steele,
+001B,,A223157,A223157.02,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Roofing Composite Shingle,,,ND,,,,,,,%,heated/ashed/dissolved with solvent,Gray,Heterogeneous,30,70,,Ryan Steele,
+002A,,A223157,A223157.03,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Gypsum Wallboard/Joint Compound,Chrysotile,1,<,,,,,,,%,washed with 10% HCI,Gray,Heterogeneous,15,85,2% Chrysotile in joint compund only <1% overall.,Ryan Steele,
+002B,,A223157,A223157.04,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Gypsum Wallboard/Joint Compound,Chrysotile,1,<,,,,,,,%,washed with 10% HCI,Gray,Heterogeneous,15,85,2% Chrysotile in joint compund only <1% overall.,Ryan Steele,
+003A,,A223157,A223157.05,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Caulk Window,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Homogeneous,,100,,Ryan Steele,
+003B,,A223157,A223157.06,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Caulk Window,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Homogeneous,,100,,Ryan Steele,
+004A,,A223157,A223157.07,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Window Glaze,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Homogeneous,,100,,Ryan Steele,
+004B,,A223157,A223157.08,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Window Glaze,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Homogeneous,,100,,Ryan Steele,

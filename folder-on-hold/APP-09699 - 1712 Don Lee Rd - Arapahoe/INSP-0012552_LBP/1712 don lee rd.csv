@@ -1,0 +1,88 @@
+Company, Heuresis Corp.,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Model, Pb200i,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Type, XRF Lead Paint Analyzer,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Serial Num.,2009,,,,,,,,,,,,,,,,,,,,,,,,,,,
+App Version, Pb200i-4.1-11,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Job Id,Reading #,Concentration,Units,3 SD,Result,Calibration Reading,Action Level,RTA Present,Read Through,NomSecs,Date,Time,User,Mode,Analytic Mode,Latitude,Longitude,Accuracy,Job,Location,Room,Side,Componet ,-->Member,Substrate,Condition,-->Cause,Color
+,1,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,8:21:24,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,Calibration,A,Fascia,,Wood,Deteriorated,,White
+,2,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,8:21:45,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,Calibration,A,Fascia,,Wood,Deteriorated,,White
+,3,1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,8:22:06,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,Calibration,A,Fascia,,Wood,Deteriorated,,White
+,4,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:26:29,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,D,Door,,Wood,Deteriorated,,Tan
+,5,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:26:46,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,D,Door,Frame,Wood,Deteriorated,,Tan
+,6,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:27:08,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,D,Room,Wall,Wood,Intact,,Brown
+,7,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:27:28,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,D,Room,Ceiling,Drywall,Intact,,White
+,8,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:28:10,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,D,Room,Floor,Drywall,Intact,,Grey
+,9,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:28:36,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,B,Cabinets,,Wood,Intact,,Brown
+,10,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:29:14,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,C,Window,Sill,Wood,Deteriorated,,Brown
+,11,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:29:34,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,C,Window,Sash,Wood,Deteriorated,,Brown
+,12,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:29:52,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Kitchen,C,Window,Frame,Wood,Deteriorated,,Brown
+,13,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:31:35,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,D,Window,Frame,Wood,Deteriorated,,Brown
+,14,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:31:52,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,D,Window,Sill,Wood,Deteriorated,,Brown
+,15,-0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:32:15,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,D,Window,Sash,Wood,Deteriorated,,Brown
+,16,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:32:42,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,C,Room,Wall,Wood,Intact,,Brown
+,17,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:33:04,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,C,Door,Jamb,Wood,Deteriorated,,Brown
+,18,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:33:20,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,C,Door,Frame,Wood,Deteriorated,,Brown
+,19,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:33:42,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Dining Room,C,Room,Chair Rail,Wood,Intact,,Brown
+,20,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:40:08,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Room,Wall,Wood,Intact,,Brown
+,21,-0.4,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:40:28,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Window,Sill,Wood,Intact,,Brown
+,22,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:40:48,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Window,Sash,Wood,Intact,,Brown
+,23,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:41:04,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Window,Frame,Wood,Intact,,Brown
+,24,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:41:26,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Door,Jamb,Wood,Deteriorated,,Brown
+,25,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:41:42,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Door,Frame,Wood,Deteriorated,,Brown
+,26,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:42:02,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,A,Door,---,Wood,Intact,,White
+,27,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:42:31,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,C,Room,Baseboard,Wood,Intact,,Brown
+,28,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:42:51,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Living Room,C,Room,Wall,Wood,Intact,,Brown
+,29,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:44:12,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 1,D,Door,,Wood,Deteriorated,,Brown
+,30,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:44:30,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 1,D,Door,Jamb,Wood,Deteriorated,,Brown
+,31,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:44:49,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 1,D,Room,Wall,Wood,Intact,,Brown
+,32,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:45:14,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 1,B,Window,Sill,Wood,Intact,,Brown
+,33,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:45:30,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 1,B,Window,Frame,Wood,Intact,,Brown
+,34,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:45:50,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 1,B,Window,Sash,Wood,Intact,,Brown
+,35,-0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:46:47,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,C,Window,Sash,Wood,Intact,,Brown
+,36,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:47:02,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,C,Window,Sill,Wood,Intact,,Brown
+,37,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:47:18,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,C,Window,Frame,Wood,Intact,,Brown
+,38,-0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:47:39,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,D,Room,Wall,Wood,Intact,,Brown
+,39,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:47:57,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,D,Door,,Wood,Intact,,Brown
+,40,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:48:13,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,D,Door,Jamb,Wood,Intact,,Brown
+,41,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:48:29,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 2,D,Door,Frame,Wood,Intact,,Brown
+,42,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:48:57,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,D,Door,Frame,Wood,Intact,,Brown
+,43,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:49:13,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,D,Door,Jamb,Wood,Intact,,Brown
+,44,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:49:30,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,D,Door,---,Wood,Intact,,Brown
+,45,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:50:09,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,D,Cabinets,,Wood,Intact,,Black
+,46,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:50:29,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,D,Room,Wall,Wood,Intact,,White
+,47,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:50:59,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,C,Tub ,,Ceramic,Intact,,White
+,48,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:51:24,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,C,Window,Frame,Wood,Intact,,White
+,49,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:51:53,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,C,Window,Sash,Wood,Intact,,Brown
+,50,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:52:16,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bathroom,C,Window,Sill,Wood,Intact,,Brown
+,51,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:52:43,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 3,C,Window,Sill,Wood,Intact,,Brown
+,52,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:52:58,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 3,C,Window,Sash,Wood,Intact,,Brown
+,53,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:53:15,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 3,C,Window,Frame,Wood,Intact,,Brown
+,54,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:53:37,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 3,C,Door,Jamb,Wood,Intact,,Brown
+,55,-0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:53:54,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 3,C,Door,Frame,Wood,Intact,,Brown
+,56,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:54:14,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Apartment / Residential ,Bedroom 3,C,Door,---,Wood,Intact,,Brown
+,57,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:57:14,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Door,---,Wood,Intact,,White
+,58,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:57:33,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Door,Frame,Wood,Intact,,White
+,59,-0.4,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:57:57,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Soffit,,Vinyl,Intact,,White
+,60,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:58:13,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Fascia,,Vinyl,Intact,,White
+,61,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:58:46,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Window,Frame,Vinyl,Intact,,White
+,62,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:59:06,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Window,Sill,Vinyl,Deteriorated,,White
+,63,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,8:59:34,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Window,Sash,Wood,Deteriorated,,Black
+,64,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:00:02,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,A,Room,Wall,Vinyl,Intact,,White
+,65,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:00:48,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,B,Room,Wall,Vinyl,Intact,,White
+,66,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:01:10,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,B,Window,Sill,Vinyl,Deteriorated,,White
+,67,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:01:30,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,B,Window,Frame,Vinyl,Intact,,White
+,68,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:01:49,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,C,Window,Frame,Vinyl,Intact,,White
+,69,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:02:10,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,C,Window,Sill,Vinyl,Deteriorated,,White
+,70,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:02:44,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,C,Window,Sash,Wood,Deteriorated,,Black
+,71,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:03:08,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,C,Room,Wall,Vinyl,Intact,,White
+,72,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:03:31,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Room,Wall,Vinyl,Intact,,White
+,73,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:03:50,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Door,Frame,Vinyl,Intact,,White
+,74,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:04:15,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Door,---,Wood,Deteriorated,,Black
+,75,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:04:31,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Door,Jamb,Wood,Deteriorated,,Black
+,76,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:04:52,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Railing,,Wood,Deteriorated,,Black
+,77,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:05:17,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Window,Sill,Vinyl,Deteriorated,,White
+,78,-0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,9:05:35,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,House,D,Window,Frame,Vinyl,Deteriorated,,White
+,79,1.2,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,9:06:36,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,Calibration,D,Window,Frame,Vinyl,Deteriorated,,White
+,80,1.1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,9:06:57,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,Calibration,D,Window,Frame,Vinyl,Deteriorated,,White
+,81,1.1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,9:07:17,EI Group,Action Level,Lead Paint,0,0,0,1712 don lee,Exterior,Calibration,D,Window,Frame,Vinyl,Deteriorated,,White

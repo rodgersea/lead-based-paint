@@ -1,0 +1,13 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,A223637,A223637.01,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Window Glaze,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Homogeneous,,100,,Ryan Steele,
+001B,,A223637,A223637.02,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Window Glaze,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Homogeneous,,100,,Ryan Steele,
+002A,,A223637,A223637.03,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Roofing Composite Shingle,,,ND,,,,,,,%,heated/ashed/dissolved with solvent,Brown,Heterogeneous,30,70,,Ryan Steele,
+002B,,A223637,A223637.04,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Roofing Composite Shingle,,,ND,,,,,,,%,heated/ashed/dissolved with solvent,Brown,Heterogeneous,30,70,,Ryan Steele,
+003A,,A223637,A223637.05,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Gypsum Wallboard/Joint Compound Ceiling Panel,,,ND,,,,,,,%,washed with 10% HCI,White,Heterogeneous,15,85,,Ryan Steele,
+003B,,A223637,A223637.06,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Gypsum Wallboard/Joint Compound Ceiling Panel,,,ND,,,,,,,%,washed with 10% HCI,White,Heterogeneous,15,85,,Ryan Steele,
+004A,,A223637,A223637.07,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Gypsum Wallboard/Joint Compound,,,ND,,,,,,,%,washed with 10% HCI,White,Heterogeneous,15,85,,Ryan Steele,
+004B,,A223637,A223637.08,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Gypsum Wallboard/Joint Compound,,,ND,,,,,,,%,washed with 10% HCI,White,Heterogeneous,15,85,,Ryan Steele,
+005A,,A223637,A223637.09,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Caulk Window,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Heterogeneous,,100,,Ryan Steele,
+005B,,A223637,A223637.10,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Caulk Window,,,ND,,,,,,,%,washed with 10% HCI/heated/ashed,White,Heterogeneous,,100,,Ryan Steele,
+006A,,A223637,A223637.11,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Transite,Chrysotile,5,,,,,,,,%,heated/ashed/dissolved with solvent,Black,Heterogeneous,40,55,,Ryan Steele,
+006B,,A223637,A223637.12,Eurofins CEI,PLM Bulk,,5/11/2022,5/16/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Ryan Steele,

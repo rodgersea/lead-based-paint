@@ -1,0 +1,5 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,A222995,A222995.01,Eurofins CEI,PLM Bulk,,5/4/2022,5/9/2022,Joint Compound,,,ND,,,,,,,%,washed with 10% HCI/crushed/milled/sifted,White,Heterogeneous,,100,Sample appears to be joint compound. No gypsum wallboard present.,Madelyn Schmidt,
+001B,,A222995,A222995.02,Eurofins CEI,PLM Bulk,,5/4/2022,5/9/2022,Joint Compound,,,ND,,,,,,,%,washed with 10% HCI/crushed/milled/sifted,White,Heterogeneous,,100,Sample appears to be joint compound. No gypsum wallboard present.,Madelyn Schmidt,
+002A,,A222995,A222995.03,Eurofins CEI,PLM Bulk,,5/4/2022,5/9/2022,Roof Shingle,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Tan,Heterogeneous,50,50,,Madelyn Schmidt,
+002B,,A222995,A222995.04,Eurofins CEI,PLM Bulk,,5/4/2022,5/9/2022,Roof Shingle,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Tan,Heterogeneous,50,50,,Madelyn Schmidt,

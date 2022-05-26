@@ -1,0 +1,107 @@
+Company, Heuresis Corp.,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Model, Pb200i,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Type, XRF Lead Paint Analyzer,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Serial Num.,2009,,,,,,,,,,,,,,,,,,,,,,,,,,,
+App Version, Pb200i-4.1-11,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Job Id,Reading #,Concentration,Units,3 SD,Result,Calibration Reading,Action Level,RTA Present,Read Through,NomSecs,Date,Time,User,Mode,Analytic Mode,Latitude,Longitude,Accuracy,Job,Location,Room,Side,Componet ,-->Member,Substrate,Condition,-->Cause,Color
+,171,1.1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,12:04:03,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,Calibration,D,Room,Wall,Vinyl,Intact,,Blue
+,172,1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,12:04:23,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,Calibration,D,Room,Wall,Vinyl,Intact,,Blue
+,173,1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,12:04:44,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,Calibration,D,Room,Wall,Vinyl,Intact,,Blue
+,174,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:10:01,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom,A,Room,Wall,Drywall,Intact,,Blue
+,175,0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:10:26,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom,A,Door,---,Wood,Intact,,White
+,176,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:10:43,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom,A,Door,Jamb,Wood,Intact,,White
+,177,0.5,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:10:59,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom,A,Door,Frame,Wood,Intact,,White
+,178,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:11:21,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom,A,Room,Baseboard,Wood,Intact,,White
+,179,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:11:53,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom,C,Tub ,,Ceramic,Intact,,White
+,180,0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:16:30,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Kitchen,C,Room,Wall,Drywall,Intact,,White
+,181,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:17:12,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Kitchen,B,Window,Sill,Wood,Intact,,White
+,182,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,12:17:29,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Kitchen,B,Window,Sash,Wood,Intact,,White
+,183,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:18:00,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Kitchen,B,Cabinets,,Wood,Intact,,White
+,184,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:18:28,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Kitchen,C,Window,Frame,Wood,Intact,,White
+,185,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:19:30,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 1,C,Room,Wall,Drywall,Intact,,White
+,186,0.6,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,3,5/4/2022,12:20:01,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 1,D,Door,,Wood,Intact,,White
+,187,1.1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,12:20:21,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 1,D,Door,Frame,Wood,Intact,,White
+,188,1.5,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:21:05,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 1,D,Window,Sill,Wood,Intact,,White
+,189,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:21:35,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 1,D,Window,Sash,Wood,Intact,,White
+,190,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:22:12,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 1,D,Room,Floor,Wood,Deteriorated,,Brown
+,191,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:23:11,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,D,Room,Ceiling,Drywall,Intact,,White
+,192,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:23:45,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,D,Room,Floor,Wood,Deteriorated,,Brown
+,193,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:24:11,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,D,Room,Floor,Wood,Deteriorated,,Brown
+,194,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:24:31,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,D,Room,Floor,Wood,Deteriorated,,Tan
+,195,0.5,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,4,5/4/2022,12:24:57,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,C,Window,Sill,Wood,Deteriorated,,Tan
+,196,0.6,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:25:21,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,C,Window,Sash,Wood,Deteriorated,,Tan
+,197,3.1,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:25:49,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Dining Room,C,Window,Frame,Wood,Deteriorated,,Tan
+,198,4.9,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:26:57,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Living Room,D,Window,Frame,Wood,Intact,,Brown
+,199,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:27:25,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Living Room,D,Room,Wall,Drywall,Intact,,White
+,200,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:27:44,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Living Room,D,Window,Sash,Wood,Intact,,Brown
+,201,6.4,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:28:17,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Living Room,D,Window,Sill,Wood,Intact,,Brown
+,202,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:29:01,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Living Room,C,Door,Jamb,Wood,Intact,,White
+,203,0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:29:19,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Living Room,C,Door,Frame,Wood,Intact,,Brown
+,204,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:35:23,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 2,D,Window,Sill,Wood,Intact,,White
+,205,1.1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,12:35:43,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 2,D,Window,Sash,Wood,Intact,,White
+,206,2.2,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:36:31,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 2,D,Window,Frame,Wood,Intact,,White
+,207,3.4,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:37:37,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 2,C,Door,,Wood,Intact,,White
+,208,5.7,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:38:08,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 2,C,Door,Jamb,Wood,Intact,,White
+,209,2.3,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:38:37,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 2,C,Door,Frame,Wood,Intact,,White
+,210,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:39:35,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Foyer,C,Room,Floor,Wood,Intact,,Blue
+,211,-0.5,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:40:59,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Hallway,C,Room,Wall,Drywall,Intact,,Green
+,212,2.9,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:42:14,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Hallway,C,Stair,,Wood,Intact,,White
+,213,4.5,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:45:19,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,A,Room,Baseboard,Wood,Intact,,White
+,214,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:45:55,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,C,Door,,Wood,Intact,,White
+,215,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:46:11,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,C,Door,Frame,Wood,Intact,,White
+,216,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:46:27,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,C,Door,Jamb,Wood,Intact,,White
+,217,4,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:47:15,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,D,Window,Frame,Wood,Intact,,White
+,218,2.7,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:47:47,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,D,Window,Sash,Wood,Intact,,White
+,219,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:48:15,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 3,D,Window,Sill,Wood,Intact,,White
+,220,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:50:02,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,A,Room,Wall,Drywall,Intact,,Purple
+,221,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,12:50:26,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,B,Door,,Wood,Intact,,White
+,222,0.7,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,12:50:52,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,B,Door,Jamb,Wood,Intact,,White
+,223,1.1,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,12:51:20,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,B,Door,Frame,Wood,Intact,,White
+,224,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:52:19,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,A,Window,Sill,Wood,Intact,,White
+,225,0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:52:42,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,A,Window,Frame,Wood,Intact,,White
+,226,0.7,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,12:53:12,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 4,A,Window,Sash,Wood,Intact,,White
+,227,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,12:55:31,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,A,Window,Sash,Wood,Intact,,White
+,228,3.8,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:56:04,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,A,Window,Sill,Wood,Intact,,White
+,229,2.7,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:56:32,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,A,Window,Frame,Wood,Intact,,White
+,230,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:57:07,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,A,Room,Wall,Drywall,Intact,,Red
+,231,1.6,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:57:48,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,D,Door,,Wood,Deteriorated,,Brown
+,232,2.8,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:58:27,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,D,Door,Jamb,Wood,Intact,,White
+,233,1.8,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,12:58:55,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 5,D,Door,Frame,Wood,Intact,,White
+,234,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,12:59:40,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Family Room,D,Room,Wall,Drywall,Intact,,Tan
+,235,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:00:10,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Family Room,A,Window,Sill,Wood,Intact,,White
+,236,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:00:29,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Family Room,A,Window,Sash,Wood,Intact,,White
+,237,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:00:49,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Family Room,A,Window,Frame,Wood,Intact,,White
+,238,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:01:33,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 6,B,Door,---,Wood,Intact,,Brown
+,239,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:01:53,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 6,B,Door,Jamb,Wood,Intact,,White
+,240,0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:02:10,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bedroom 6,B,Door,Frame,Wood,Intact,,White
+,241,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:03:26,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Hallway,A,Room,Wall,Wood,Intact,,White
+,242,-0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:04:10,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,A,Room,Wall,Drywall,Intact,,Blue
+,243,2,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:04:38,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,C,Window,Sill,Wood,Intact,,White
+,244,9.3,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:05:06,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,C,Window,Frame,Wood,Intact,,White
+,245,0.5,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:05:42,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,C,Door,---,Wood,Intact,,White
+,246,1.6,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:05:58,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,C,Door,Jamb,Wood,Intact,,White
+,247,4.7,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:06:31,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,C,Door,Frame,Wood,Intact,,White
+,248,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:07:11,EI Group,Action Level,Lead Paint,0,0,0,5651,Apartment / Residential ,Bathroom 2,A,Tub ,,Ceramic,Intact,,White
+,249,0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:20:11,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Column,,Wood,Intact,,White
+,250,0.2,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:20:46,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Stair,,Concrete,Deteriorated,,Red
+,251,7.5,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:21:18,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Soffit,,Wood,Intact,,White
+,252,0.8,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,13:21:50,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Fascia,,Wood,Intact,,White
+,253,8.1,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:22:28,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Window,Frame,Wood,Intact,,White
+,254,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:22:57,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Window,Sill,Wood,Intact,,White
+,255,6.2,mg/cm2,0.3,Positive,FALSE,1,FALSE,FALSE,2,5/4/2022,13:23:16,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Room,Wall,Wood,Intact,,White
+,256,0,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:23:54,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Door,,Wood,Intact,,White
+,257,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:24:12,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,A,Door,Frame,Wood,Intact,,White
+,258,0.4,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:25:42,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,D,Room,Wall,Wood,Intact,,White
+,259,0.3,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:26:15,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,D,Window,Sash,Wood,Deteriorated,,White
+,260,0.5,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:27:41,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,D,Door,,Wood,Intact,,White
+,261,0.7,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,4,5/4/2022,13:28:07,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,C,Room,Wall,Wood,Intact,,White
+,262,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:28:47,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,C,Window,Sill,Wood,Deteriorated,,White
+,263,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,13:29:06,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,C,Window,Sash,Wood,Deteriorated,,White
+,264,0.8,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,13:29:39,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,C,Window,Frame,Wood,Deteriorated,,White
+,265,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:30:32,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,D,Window,Frame,Wood,Intact,,White
+,266,-0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:30:50,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,D,Window,Sill,Wood,Intact,,White
+,267,0.1,mg/cm2,0.3,Negative,FALSE,1,FALSE,FALSE,2,5/4/2022,13:31:16,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,House,D,Room,Wall,Wood,Intact,,White
+,268,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,13:33:56,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,Calibration,D,Room,Wall,Wood,Intact,,White
+,269,1.2,mg/cm2,0.2,Positive,FALSE,1,FALSE,FALSE,5,5/4/2022,13:34:17,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,Calibration,D,Room,Wall,Wood,Intact,,White
+,270,0.9,mg/cm2,0.2,Negative,FALSE,1,FALSE,FALSE,5,5/4/2022,13:34:38,EI Group,Action Level,Lead Paint,0,0,0,5651,Exterior,Calibration,D,Room,Wall,Wood,Intact,,White

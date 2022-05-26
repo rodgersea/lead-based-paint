@@ -1,0 +1,12 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,A223374,A223374.01,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Popcorn Ceiling,Chrysotile,2,,,,,,,,%,washed with 10% HCI/crushed/milled/sifted,White,Heterogeneous,,98,,Kathryn Wescott,
+001B,,A223374,A223374.02,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Kathryn Wescott,
+001C,,A223374,A223374.03,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Kathryn Wescott,
+001D,,A223374,A223374.04,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Kathryn Wescott,
+001E,,A223374,A223374.05,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Kathryn Wescott,
+002A,,A223374,A223374.06,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Wallboard/Joint Compound,,,ND,,,,,,,%,washed with 10% HCI/crushed/milled/sifted,White,Heterogeneous,20,81,,Kathryn Wescott,
+002B,,A223374,A223374.07,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Wallboard/Joint Compound,,,ND,,,,,,,%,washed with 10% HCI/crushed/milled/sifted,White,Heterogeneous,20,81,,Kathryn Wescott,
+003A,,A223374,A223374.08,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Vinyl Flooring,Chrysotile,20,,,,,,,,%,crushed/milled/sifted/heated/ashed/dissolved with solvent,Blue,Heterogeneous,30,50,,Kathryn Wescott,
+003B,,A223374,A223374.09,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Kathryn Wescott,
+004A,,A223374,A223374.10,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Vinyl Flooring,Chrysotile,20,,,,,,,,%,crushed/milled/sifted/heated/ashed/dissolved with solvent,Blue,Heterogeneous,30,50,,Kathryn Wescott,
+004B,,A223374,A223374.11,Eurofins CEI,PLM Bulk,,5/9/2022,5/12/2022,Sample Not Analyzed per COC,,,,,,,,,,%,,,,,,,Kathryn Wescott,

@@ -1,0 +1,5 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,A223159,A223159.01,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Gypsum Wallboard/Joint Compound,,,ND,,,,,,,%,washed with 10% HCI,White,Heterogeneous,15,85,,Ryan Steele,
+001B,,A223159,A223159.02,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Gypsum Wallboard/Joint Compound,,,ND,,,,,,,%,washed with 10% HCI,White,Heterogeneous,15,85,,Ryan Steele,
+002A,,A223159,A223159.03,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Roofing Composite Shingle,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Black,Heterogeneous,30,70,,Ryan Steele,
+002B,,A223159,A223159.04,Eurofins CEI,PLM Bulk,,5/5/2022,5/9/2022,Roofing Composite Shingle,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Black,Heterogeneous,30,70,,Ryan Steele,

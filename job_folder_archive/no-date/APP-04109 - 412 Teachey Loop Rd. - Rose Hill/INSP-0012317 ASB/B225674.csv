@@ -1,0 +1,11 @@
+SAMP_NO,LAYER,LAB_ORDER_NO,LAB_SAMP_NO,LAB_NAME,TEST,DATE_COLLECTED,DATE_RECEIVED,DATE_ANALYZED,SAMPLE_DESC,ASB_TYPE_1,ASB_AMT_1,ASB_Q_1,ASB_TYPE_2,ASB_AMT_2,ASB_Q_2,ASB_TYPE_3,ASB_AMT_3,ASB_Q_3,ASB_AMT_UNIT,TREATMENT,COLOR,HOMOGENEITY,NON_ASB_FIBROUS,NON_ASB_NONFIBROUS,COMMENT,ANALYST,ASB_PTS_COUNT
+001A,,B225674,B225674.01,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Shingle,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Black,Heterogeneous,45,55,,Candace Burrus,
+001B,,B225674,B225674.02,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Shingle,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Black,Heterogeneous,45,55,,Candace Burrus,
+002A,,B225674,B225674.03A,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Linoleum,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,White,Heterogeneous,,100,,Candace Burrus,
+002A,,B225674,B225674.03B,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Mastic,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Clear,Heterogeneous,,100,,Candace Burrus,
+002B,,B225674,B225674.04A,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Linoleum,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,White,Heterogeneous,,100,,Candace Burrus,
+002B,,B225674,B225674.04B,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Mastic,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Clear,Heterogeneous,,100,,Candace Burrus,
+003A,,B225674,B225674.05,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Linoleum,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Gray,Heterogeneous,35,65,,Candace Burrus,
+003B,,B225674,B225674.06,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Linoleum,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Gray,Heterogeneous,35,65,,Candace Burrus,
+004A,,B225674,B225674.07,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Ceiling Tile,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Tan,Heterogeneous,95,5,,Candace Burrus,
+004B,,B225674,B225674.08,Eurofins CEI,PLM Bulk,,3/10/2022,3/15/2022,Ceiling Tile,,,ND,,,,,,,%,dissolved with solvent/heated/ashed,Tan,Heterogeneous,95,5,,Candace Burrus,
